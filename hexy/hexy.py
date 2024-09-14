@@ -222,6 +222,7 @@ def cube_to_axial(cube: NDArray[NDArray[NumericDType]]) -> NDArray[NDArray[Numer
     return np.vstack((cube[:, 0], cube[:, 2])).T
 
 
+@validate_input(validate_2d_ndarray_shape((2,)))
 def axial_to_cube(axial: NDArray[NDArray[NumericDType]]) -> NDArray[NDArray[NumericDType]]:
     """
     Convert axial to cube coordinates.
