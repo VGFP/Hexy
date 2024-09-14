@@ -12,8 +12,8 @@ Key Rules:
 
 import numpy as np
 
-from .errors import IncorrectCoordinatesError, HexExistsError, MismatchError
-from .hexy import cube_to_axial, SE, E
+from .errors import HexExistsError, IncorrectCoordinatesError, MismatchError
+from .hexy import SE, E, cube_to_axial
 
 # The bases of the axial coordinate system
 bases_mat = cube_to_axial(np.array([SE, E], dtype=int))

@@ -1,8 +1,9 @@
 import math
+from functools import wraps
+from typing import Any, Callable, List, Tuple, Union
+
 import numpy as np
 from numpy.typing import NDArray
-from functools import wraps
-from typing import Tuple, Union, List, Callable, Any
 
 NumericDType = Union[np.float64, np.int64]
 

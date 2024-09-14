@@ -1,6 +1,6 @@
 import numpy as np
-import hexy as hx
 
+import hexy as hx
 
 hm = hx.HexMap()
 radius = 10

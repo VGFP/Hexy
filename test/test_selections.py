@@ -1,6 +1,8 @@
-import numpy as np
-import hexy as hx
 import pprint
+
+import numpy as np
+
+import hexy as hx
 
 
 # The way get_ring works is:
