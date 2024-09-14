@@ -1,6 +1,7 @@
 import numpy as np
 import hexy as hx
 
+
 class HexTile(object):
     """
     Base Hex class. Doesn't do anything. Ideally, you want to store instances of
@@ -14,5 +15,3 @@ class HexTile(object):
         self.position = hx.axial_to_pixel(self.axial_coordinates, radius)
         self.radius = radius
         self.tile_id = tile_id
-
-

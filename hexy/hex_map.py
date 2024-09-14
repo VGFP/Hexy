@@ -9,6 +9,7 @@ Key Rules:
 - a and b can be negative, so it is okay if the key is written as
   '-a,b' or 'a,-b' or '-a,-b'
 """
+
 import numpy as np
 
 from .errors import IncorrectCoordinatesError, HexExistsError, MismatchError
@@ -24,7 +25,7 @@ def make_key_from_coordinates(indexes):
     :param indexes: the indexes of a hex. nx2, n=number of index pairs
     :return: key for hashing based on index.
     """
-    return [str(int(index[0])) + ',' + str(int(index[1])) for index in indexes]
+    return [str(int(index[0])) + "," + str(int(index[1])) for index in indexes]
 
 
 def solve_for_indexes(hexes):

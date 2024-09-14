@@ -10,7 +10,6 @@ coords = hx.get_spiral(np.array((0, 0, 0)), 1, 10)
 def test_hexes_amount_to_radius_conversion():
     hexes = 1 + 3 * radius * (radius + 1)
     found_radius = hx.radius_from_hexes(hexes)
-
     assert found_radius == radius
 
 
@@ -51,4 +50,3 @@ def test_the_converted_coords_and_dataset_coords_retrieve_the_same_data():
     retrieved = hm[pixel_to_cube_to_axial_coords]
 
     assert np.array_equal(retrieved, coords)
-
